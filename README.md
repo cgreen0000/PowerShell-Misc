@@ -1,2 +1,2 @@
 # PowerShell-Misc
-Misc PowerShell scripts
+Miscellaneous PowerShell scripts.

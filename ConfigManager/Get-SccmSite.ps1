@@ -35,6 +35,8 @@ function Get-SccmSite {
     )
     
     begin {
+        # The CMSite provider is added after the ConfigurationManager module is loaded.
+        Import-Module ConfigurationManager
         $SCCMSite = Get-PSDrive -PSProvider CMSite
         $SCCMSitePath = $SCCMSite.Name + ':'
     }
